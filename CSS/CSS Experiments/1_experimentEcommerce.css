@@ -1,0 +1,70 @@
+/* Styling the whole body */
+body {
+  font-family: Arial, sans-serif; /* Font style */
+  background-color: #f2f2f2; /* Light gray background */
+  margin: 40px; /* Space around the page */
+}
+
+/* Styling for main product container */
+.product-container {
+  background-color: #ffffff; /* White box for product */
+  border: 2px solid #ddd; /* Light gray border */
+  padding: 20px; /* Inner spacing */
+  width: 400px; /* Fixed width */
+  height: auto; /* Height adjusts automatically */
+  margin: auto; /* Center align */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Product image style */
+.product-image {
+  width: 100%; /* Full width of container */
+  height: 250px; /* Fixed height */
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+/* Product title */
+.product-title {
+  color: #333; /* Dark text */
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Product description */
+.product-description {
+  color: #555;
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+/* Price styling */
+.product-price {
+  color: #e63946; /* Red color */
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.buy-button {
+  display: block;
+  background-color: #007bff; /* Blue button */
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Button hover effect */
+.buy-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 30px;
+  color: #333;
+}
+
+/* All flex containers share this base style */
+.flex-container {
+  display: flex;             /* Enables Flexbox */
+  background-color: #fff;
+  border: 2px solid #ccc;
+  height: 120px;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+/* Basic box style */
+.box {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+  font-weight: bold;
+  width: 60px;
+}
+
+/* One taller box to show vertical alignment effect */
+.tall {
+  height: 70px;
+}
+
+/* justify-content example */
+.justify-center {
+  justify-content: center;
+}
+
+/* align-items example */
+.align-center {
+  align-items: center;
+}
+
+/* flex-direction example */
+.column-direction {
+  flex-direction: column;
+  height: auto;
+  align-items: flex-start;
+}
+
+/* Combined example */
+.final-example {
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}

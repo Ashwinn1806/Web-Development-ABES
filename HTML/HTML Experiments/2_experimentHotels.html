@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Room Booking Form</title>
+</head>
+<body>
+  <!-- Main heading for the page -->
+  <h1>Hotel Room Booking Form</h1>
+
+  <!-- Paragraph explaining purpose -->
+  <p>Please fill in your details below to book your stay at our hotel.</p>
+
+  <!-- Form starts here -->
+  <form>
+    <!-- Name input -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    <br><br>
+
+    <!-- Email input -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+    <br><br>
+
+    <!-- Phone number input -->
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+    <br><br>
+
+    <!-- Check-in date -->
+    <label for="checkin">Check-in Date:</label>
+    <input type="date" id="checkin" name="checkin" required>
+    <br><br>
+
+    <!-- Check-out date -->
+    <label for="checkout">Check-out Date:</label>
+    <input type="date" id="checkout" name="checkout" required>
+    <br><br>
+
+    <!-- Room type selection -->
+    <label for="room">Room Type:</label>
+    <select id="room" name="room">
+      <option value="single">Single Room</option>
+      <option value="double">Double Room</option>
+      <option value="suite">Suite</option>
+      <option value="deluxe">Deluxe Room</option>
+    </select>
+    <br><br>
+
+    <!-- Number of guests -->
+    <label for="guests">Number of Guests:</label>
+    <input type="number" id="guests" name="guests" min="1" max="10" required>
+    <br><br>
+
+    <!-- Special requests -->
+    <label for="requests">Special Requests:</label>
+    <br>
+    <textarea id="requests" name="requests" rows="4" cols="40" placeholder="Enter any special requests here..."></textarea>
+    <br><br>
+
+    <!-- Payment option -->
+    <label for="payment">Payment Method:</label>
+    <select id="payment" name="payment">
+      <option value="credit">Credit Card</option>
+      <option value="debit">Debit Card</option>
+      <option value="upi">UPI</option>
+      <option value="cash">Cash on Arrival</option>
+    </select>
+    <br><br>
+
+    <!-- Buttons -->
+    <button type="submit">Submit Booking</button>
+    <button type="reset">Reset Form</button>
+  </form>
+
+  <!-- Footer note -->
+  <p><i>Note:</i> All fields marked as required must be filled before submitting.</p>
+</body>
+</html>

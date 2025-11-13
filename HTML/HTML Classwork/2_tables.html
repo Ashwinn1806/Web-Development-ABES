@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table Information Example</title>
+</head>
+<body>
+  <!-- Main heading for the topic -->
+  <h1>Understanding HTML Tables</h1>
+
+  <!-- Paragraph explaining what tables are -->
+  <p>
+    HTML tables are used to organize data in rows and columns. 
+    A table is created using the <b>&lt;table&gt;</b> tag, 
+    and rows are added using <b>&lt;tr&gt;</b> (table row). 
+    Inside each row, cells are defined using <b>&lt;td&gt;</b> (table data) 
+    or <b>&lt;th&gt;</b> (table header).
+  </p>
+
+  <!-- Example of basic table structure -->
+  <h2>Basic Table Structure:</h2>
+  <p>
+    Below is a simple table example showing how <b>rowspan</b> and <b>colspan</b> are used.
+  </p>
+
+  <!-- Starting the table -->
+  <table border="1" cellspacing="0" cellpadding="5">
+    <!-- Caption provides a title for the table -->
+    <caption>Student Attendance Example</caption>
+
+    <!-- Table header row -->
+    <tr>
+      <th>Day</th>
+      <th colspan="2">Attendance</th> <!-- Colspan merges two columns under Attendance -->
+    </tr>
+
+    <!-- Second header row for morning and afternoon -->
+    <tr>
+      <th></th>
+      <th>Morning</th>
+      <th>Afternoon</th>
+    </tr>
+
+    <!-- Monday row with rowspan -->
+    <tr>
+      <th rowspan="2">Monday</th> <!-- Rowspan merges two rows -->
+      <td>Present</td>
+      <td>Absent</td>
+    </tr>
+
+    <!-- Tuesday row -->
+    <tr>
+      <td>Present</td>
+      <td>Present</td>
+    </tr>
+  </table>
+
+  <!-- Explanation of attributes -->
+  <h2>Important Table Attributes:</h2>
+  <ul>
+    <li><b>border</b>: Defines the thickness of table borders.</li>
+    <li><b>cellspacing</b>: Space between table cells.</li>
+    <li><b>cellpadding</b>: Space inside each cell (between content and border).</li>
+    <li><b>caption</b>: Adds a title to the table.</li>
+    <li><b>rowspan</b>: Merges cells vertically (across rows).</li>
+    <li><b>colspan</b>: Merges cells horizontally (across columns).</li>
+  </ul>
+
+  <!-- Note for understanding -->
+  <p>
+    <i>Note:</i> Tables are very useful for creating structures like timetables, results, or data reports.
+  </p>
+
+</body>
+</html>

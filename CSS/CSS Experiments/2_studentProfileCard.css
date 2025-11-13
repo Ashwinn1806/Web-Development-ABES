@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 30px;
+  color: #333;
+}
+
+/* Main container that uses flexbox */
+.card-container {
+  display: flex;                /* Enables flexbox layout */
+  justify-content: center;      /* Centers cards horizontally */
+  align-items: center;          /* Aligns them vertically */
+  flex-direction: row;          /* Cards placed in a row */
+  flex-wrap: wrap;              /* Moves cards to next line if screen is small */
+  gap: 20px;                    /* Space between cards */
+  margin-top: 30px;
+}
+
+/* Individual profile card */
+.profile-card {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: 250px;
+  padding: 20px;
+  display: flex;                /* Flex inside card */
+  flex-direction: column;       /* Items stacked vertically */
+  align-items: center;          /* Center image and text */
+  box-shadow: 2px 2px 5px #aaa;
+}
+
+/* Profile photo */
+.profile-card img {
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Info text */
+.profile-info {
+  text-align: center;
+}
+
+.profile-info h3 {
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+.profile-info p {
+  margin: 4px 0;
+}

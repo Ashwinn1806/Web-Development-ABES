@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flexbox Properties Example</title>
+  <!-- Linking external CSS file -->
+  <link rel="stylesheet" type="text/css" href="3_flexProperties.css">
+</head>
+
+<body>
+  <h1>Understanding Flexbox Properties</h1>
+  <p>This page demonstrates how <b>justify-content</b>, <b>align-items</b>, and <b>flex-direction</b> work in CSS Flexbox.</p>
+
+  <hr>
+
+  <h2>1. justify-content</h2>
+  <p>It defines how flex items are aligned <b>horizontally</b> along the main axis.</p>
+  <div class="flex-container justify-center">
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+  </div>
+  <p>Here, <code>justify-content: center;</code> aligns all boxes in the center horizontally.</p>
+
+  <hr>
+
+  <h2>2. align-items</h2>
+  <p>It defines how flex items are aligned <b>vertically</b> along the cross axis.</p>
+  <div class="flex-container align-center">
+    <div class="box tall">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+  </div>
+  <p>Here, <code>align-items: center;</code> vertically centers the boxes.</p>
+
+  <hr>
+
+  <h2>3. flex-direction</h2>
+  <p>It defines the <b>direction</b> of the flex items — either row or column.</p>
+  <div class="flex-container column-direction">
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+  </div>
+  <p>Here, <code>flex-direction: column;</code> arranges items vertically.</p>
+
+  <hr>
+
+  <h2>Final Example — Combining All Three</h2>
+  <p>This example uses <code>justify-content: space-around;</code>, <code>align-items: center;</code>, and <code>flex-direction: row;</code>.</p>
+
+  <div class="flex-container final-example">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+</body>
+</html>

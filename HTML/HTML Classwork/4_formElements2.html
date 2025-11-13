@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Attributes in HTML</title>
+</head>
+<body>
+  <!-- Main heading -->
+  <h1>Understanding HTML Form Attributes</h1>
+
+  <!-- Introduction paragraph -->
+  <p>
+    HTML forms use several attributes to control how data is collected and submitted. 
+    Below are the most common and useful form attributes explained with examples.
+  </p>
+
+  <!-- Explanation section -->
+  <h2>1. method Attribute</h2>
+  <p>
+    The <b>method</b> attribute specifies how form data is sent to the server.  
+    It can have two values:
+  </p>
+  <ul>
+    <li><b>GET</b> — Appends form data to the URL (used for simple or read-only requests).</li>
+    <li><b>POST</b> — Sends form data securely in the request body (used for sensitive data).</li>
+  </ul>
+
+  <h2>2. action Attribute</h2>
+  <p>
+    The <b>action</b> attribute defines the destination (URL or page) where the form data will be sent after submission.
+    <br>For example: <code>action="submit_page.html"</code>
+  </p>
+
+  <h2>3. placeholder Attribute</h2>
+  <p>
+    The <b>placeholder</b> attribute displays a hint inside input fields 
+    to guide users about what to enter.
+  </p>
+
+  <h2>4. required Attribute</h2>
+  <p>
+    The <b>required</b> attribute makes a field mandatory — 
+    the user cannot submit the form without filling it.
+  </p>
+
+  <hr>
+
+  <!-- Example form section -->
+  <h2>Example: Simple Feedback Form</h2>
+
+  <!-- 'method' defines how data is sent -->
+  <!-- 'action' defines where data will go -->
+  <form method="post" action="thankyou.html">
+
+    <!-- Name input with placeholder and required -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <br><br>
+
+    <!-- Email input with placeholder and required -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+    <br><br>
+
+    <!-- Feedback message -->
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="40" placeholder="Write your feedback here..." required></textarea>
+    <br><br>
+
+    <!-- Submit and reset buttons -->
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <!-- Note -->
+  <p>
+    <i>Note:</i> Try submitting the form without filling all fields — 
+    the <b>required</b> attribute will prevent submission until all fields are complete.
+  </p>
+</body>
+</html>
